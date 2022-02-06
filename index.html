@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BU</title>
+<meta name="referrer" content="origin-when-cross-origin">
+<meta name="viewport" content="width=960">
+<style>.anim{visibility:hidden}</style>
+<link rel="preload" href="css/EBGaramond-Regular.woff2" as="font" crossorigin>
+<style>html,body{-webkit-text-zoom:reset !important}@font-face{font-display:block;font-family:"EB Garamond";src:url('css/EBGaramond-Regular.woff2') format('woff2'),url('css/EBGaramond-Regular.woff') format('woff');font-weight:400}@font-face{font-display:block;font-family:"Muli";src:url('css/Muli-Regular.woff2') format('woff2'),url('css/Muli-Regular.woff') format('woff');font-weight:400}body>div{font-size:0}p,span,h1,h2,h3,h4,h5,h6,a,li{margin:0;word-spacing:normal;word-wrap:break-word;-ms-word-wrap:break-word;pointer-events:auto;-ms-text-size-adjust:none !important;-moz-text-size-adjust:none !important;-webkit-text-size-adjust:none !important;text-size-adjust:none !important;max-height:1000000000px}sup{font-size:inherit;vertical-align:baseline;position:relative;top:-0.4em}sub{font-size:inherit;vertical-align:baseline;position:relative;top:0.4em}ul{display:block;word-spacing:normal;word-wrap:break-word;list-style-type:none;padding:0;margin:0;-moz-padding-start:0;-khtml-padding-start:0;-webkit-padding-start:0;-o-padding-start:0;-padding-start:0;-webkit-margin-before:0;-webkit-margin-after:0}li{display:block;white-space:normal}li p{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;-o-user-select:none;user-select:none}form{display:inline-block}a{text-decoration:inherit;color:inherit;-webkit-tap-highlight-color:rgba(0,0,0,0)}textarea{resize:none}.shm-l{float:left;clear:left}.shm-r{float:right;clear:right}.btf{display:none}.plyr{min-width:0 !important}html{font-family:sans-serif}body{font-size:0;margin:0}audio,video{display:inline-block;vertical-align:baseline}audio:not([controls]){display:none;height:0}[hidden],template{display:none}a{background:0 0;outline:0}b,strong{font-weight:700}dfn{font-style:italic}h1,h2,h3,h4,h5,h6{font-size:1em;line-height:1;margin:0}img{border:0}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button,html input[type=button],input[type=submit]{-webkit-appearance:button;cursor:pointer;box-sizing:border-box;white-space:normal}input[type=text],input[type=password],textarea{-webkit-appearance:none;appearance:none;box-sizing:border-box}button[disabled],html input[disabled]{cursor:default}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}textarea{overflow:auto;box-sizing:border-box;border-color:#ddd}optgroup{font-weight:700}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}blockquote{margin-block-start:0;margin-block-end:0;margin-inline-start:0;margin-inline-end:0}:-webkit-full-screen-ancestor:not(iframe){-webkit-clip-path:initial!important}
+html{-webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale}@-webkit-keyframes fadeInDown{from{opacity:0;-webkit-transform:translate3d(0,-100%,0)}to{opacity:1;-webkit-transform:translate3d(0, 0, 0)}}@keyframes fadeInDown{from{opacity:0;transform:translate3d(0,-100%,0)}to{opacity:1;transform:translate3d(0, 0, 0)}}.fadeInDown{-webkit-animation-name:fadeInDown;animation-name:fadeInDown}
+.animated{-webkit-animation-fill-mode:both;animation-fill-mode:both}.animated.infinite{-webkit-animation-iteration-count:infinite;animation-iteration-count:infinite}#b{background-color:#000}.ps47{position:relative;margin-top:38px}.v2{display:block;vertical-align:top}.s34{pointer-events:none;min-width:960px;width:960px;margin-left:auto;margin-right:auto;min-height:3108px}.v3{display:inline-block;vertical-align:top}.ps48{position:relative;margin-left:150px;margin-top:0}.s35{min-width:600px;width:600px;min-height:127px}.ps49{position:relative;margin-left:0;margin-top:0}.w2{line-height:0}.s36{min-width:600px;width:600px;min-height:113px}.c73{z-index:1;pointer-events:auto;overflow:hidden;height:113px}.p3{text-indent:0;padding-bottom:0;padding-right:0;text-align:center}.f4{font-family:"EB Garamond";font-size:56px;font-size:calc(56px * var(--f));line-height:1.822;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps50{position:relative;margin-left:0;margin-top:-48px}.s37{min-width:600px;width:600px;min-height:62px}.c74{z-index:2;pointer-events:auto;overflow:hidden;height:62px}.f5{font-family:Muli;font-size:30px;font-size:calc(30px * var(--f));line-height:1.768;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps51{position:relative;margin-left:0;margin-top:48px}.s38{min-width:960px;width:960px;min-height:556px}.ps52{position:relative;margin-left:0;margin-top:8px}.c75{z-index:4;pointer-events:auto;overflow:hidden;height:62px}.p4{text-indent:0;padding-bottom:0;padding-right:0;text-align:left}.ps53{position:relative;margin-left:30px;margin-top:-24px}.s39{min-width:600px;width:600px;min-height:442px}.c76{z-index:3;pointer-events:auto;overflow:hidden;height:62px}.ps54{position:relative;margin-left:0;margin-top:-24px}.s40{min-width:600px;width:600px;min-height:404px}.c77{z-index:5;pointer-events:auto;overflow:hidden;height:62px}.ps55{position:relative;margin-left:0;margin-top:-22px}.c78{z-index:6;pointer-events:auto;overflow:hidden;height:62px}.ps56{position:relative;margin-left:0;margin-top:-20px}.c79{z-index:7;pointer-events:auto;overflow:hidden;height:62px}.ps57{position:relative;margin-left:0;margin-top:-16px}.c80{z-index:8;pointer-events:auto;overflow:hidden;height:62px}.c81{z-index:9;pointer-events:auto;overflow:hidden;height:62px}.ps58{position:relative;margin-left:0;margin-top:-21px}.c82{z-index:10;pointer-events:auto;overflow:hidden;height:62px}.ps59{position:relative;margin-left:0;margin-top:-18px}.c83{z-index:12;pointer-events:auto;overflow:hidden;height:62px}.c84{z-index:29;pointer-events:auto;overflow:hidden;height:62px}.c85{z-index:30;pointer-events:auto;overflow:hidden;height:62px}.ps60{position:relative;margin-left:0;margin-top:-70px}.s41{min-width:330px;width:330px;min-height:556px}.s42{min-width:330px;width:330px;min-height:62px}.c86{pointer-events:auto;overflow:hidden;height:62px}.s43{min-width:330px;width:330px;min-height:186px}.s44{min-width:330px;width:330px;min-height:186px;height:186px}.c87{z-index:11;pointer-events:auto}.i5{position:absolute;left:0;width:330px;height:186px;top:0}.i6{width:100%;height:100%;display:inline-block}.ps61{position:relative;margin-left:10px;margin-top:-175px}.s45{min-width:310px;width:310px;min-height:34px}.c88{z-index:16;pointer-events:auto;overflow:hidden;height:34px}.f6{font-family:"EB Garamond";font-size:15px;font-size:calc(15px * var(--f));line-height:1.801;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#000;background-color:initial;text-shadow:none}.ps62{position:relative;margin-left:0;margin-top:-134px}.s46{min-width:330px;width:330px;min-height:134px}.c89{z-index:17;pointer-events:auto;overflow:hidden;height:134px}.ps63{position:relative;margin-left:0;margin-top:20px}.s47{min-width:330px;width:330px;min-height:96px}.c90{pointer-events:auto;overflow:hidden;height:96px}.f7{font-family:Muli;font-size:30px;font-size:calc(30px * var(--f));line-height:1.001;font-weight:400;font-style:normal;text-decoration:none;text-transform:none;letter-spacing:normal;color:#e2e2e2;background-color:initial;text-shadow:none}.ps64{position:relative;margin-left:0;margin-top:6px}.c91{z-index:15;pointer-events:auto}.ps65{position:relative;margin-left:10px;margin-top:-176px}.c92{z-index:18;pointer-events:auto;overflow:hidden;height:34px}.ps66{position:relative;margin-left:0;margin-top:-135px}.c93{z-index:19;pointer-events:auto;overflow:hidden;height:134px}.ps67{position:relative;margin-left:30px;margin-top:46px}</style>
+<link onload="this.media='all';this.onload=null;" rel="stylesheet" href="css/site.700e60.css" media="print">
+</head>
+<body id="b">
+<div class="ps47 v2 s34">
+<div class="v3 ps48 s35 c72">
+<div class="v3 ps49 s35 w2">
+<div class="v3 ps49 s36 c73">
+<p class="p3 f4">BITCOIN UNIVERSITY</p>
+</div>
+<div class="anim fadeInDown un1 v3 ps50 s37 c74">
+<p class="p3 f5">Learn about what matters in crypto.</p>
+</div>
+</div>
+</div>
+<div class="v3 ps51 s38 c72">
+<div class="anim fadeInDown un2 v3 ps52 s37 c75">
+<p class="p4 f5">Table of contents:</p>
+</div>
+<div class="v3 ps53 s39 w2">
+<div class="anim fadeInDown un3 v3 ps49 s37 c76">
+<p class="p4 f5">How cryptography works</p>
+</div>
+<div class="v3 ps54 s40 c72">
+<div class="v3 ps49 s40 w2">
+<div class="anim fadeInDown un4 v3 ps49 s37 c77">
+<p class="p4 f5">What bitcoin is</p>
+</div>
+<div class="anim fadeInDown un5 v3 ps55 s37 c78">
+<p class="p4 f5">What other coins are</p>
+</div>
+<div class="anim fadeInDown un6 v3 ps56 s37 c79">
+<p class="p4 f5">What smart contracts are</p>
+</div>
+<div class="anim fadeInDown un7 v3 ps57 s37 c80">
+<p class="p4 f5">What DAOs are</p>
+</div>
+<div class="anim fadeInDown un8 v3 ps56 s37 c81">
+<p class="p4 f5">What NFTs are</p>
+</div>
+<div class="anim fadeInDown un9 v3 ps58 s37 c82">
+<p class="p4 f5">Ways you can make money</p>
+</div>
+<div class="anim fadeInDown un10 v3 ps59 s37 c83">
+<p class="p4 f5">Ways you can loose money</p>
+</div>
+<div class="anim fadeInDown un11 v3 ps58 s37 c84">
+<p class="p4 f5">Why public keys are important</p>
+</div>
+<div class="anim fadeInDown un12 v3 ps57 s37 c85">
+<p class="p4 f5">Why private keys are important</p>
+</div>
+</div>
+</div>
+</div>
+<div class="v3 ps60 s41 w2">
+<div class="v3 ps49 s42 c86">
+<p class="p3 f5">How to use this site</p>
+</div>
+<div class="v3 ps49 s43 c72">
+<div class="v3 ps49 s43 w2">
+<div class="v3 ps49 s44 c87">
+<picture class="consentPlaceholder i6">
+<source srcset="images/video-330.webp 1x, images/video-660.webp 2x" type="image/webp">
+<source srcset="images/video-330.png 1x, images/video-660.png 2x">
+<img src="images/video-660.png" class="un13 i5">
+</picture>
+</div>
+<div class="v3 ps61 s45 c88">
+<p class="p3 f6">INTRO VIDEO</p>
+</div>
+<div class="v3 ps62 s46 c89">
+<p class="p3 f6">Explaining who I am and how <br><br>I can help others understand simply</p>
+</div>
+</div>
+</div>
+<div class="v3 ps63 s47 c90">
+<p class="p3 f7">Why you should not trust everything you see on the internet</p>
+</div>
+<div class="v3 ps64 s43 c72">
+<div class="v3 ps49 s43 w2">
+<div class="v3 ps49 s44 c91">
+<picture class="consentPlaceholder i6">
+<source srcset="images/video-330.webp 1x, images/video-660.webp 2x" type="image/webp">
+<source srcset="images/video-330.png 1x, images/video-660.png 2x">
+<img src="images/video-660.png" class="un14 i5">
+</picture>
+</div>
+<div class="v3 ps65 s45 c92">
+<p class="p3 f6">DISCLAMER VIDEO</p>
+</div>
+<div class="v3 ps66 s46 c93">
+<p class="p3 f6">To protect the owners of this site<br><br> from giving specific financial advice&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un15 v3 ps67 s37 c86">
+<p class="p4 f5">How cryptography works</p>
+</div>
+<div class="v1 ps1 s1 c1">
+<div class="v1 ps2 s2 w1">
+<div class="v1 ps1 s3 c1">
+<div class="v1 ps2 s4 w1">
+<div class="v1 ps2 s5 c2">
+<picture class="consentPlaceholder i2 un48">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un16 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c3">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v1 ps4 s7 c4">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v1 ps5 s8 w1">
+<div class="v1 ps2 s5 c5">
+<picture class="consentPlaceholder i2 un49">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un17 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c6">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v1 ps6 s7 c7">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un18 v1 ps7 s9 c8">
+<p class="p1 f3">What bitcoin is</p>
+</div>
+<div class="v1 ps8 s10 c1">
+<div class="v1 ps2 s11 w1">
+<div class="v1 ps2 s5 c9">
+<picture class="consentPlaceholder i2 un50">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un19 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c10">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v1 ps5 s11 w1">
+<div class="v1 ps2 s5 c11">
+<picture class="consentPlaceholder i2 un51">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un20 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c12">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+</div>
+</div>
+<div class="v1 ps9 s5 c13">
+<picture class="consentPlaceholder i2 un52">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un21 i1">
+</picture>
+</div>
+<div class="v1 ps10 s12 w1">
+<div class="v1 ps2 s5 c14">
+<picture class="consentPlaceholder i2 un53">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un22 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c15">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps6 s7 c16">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+<div class="v1 ps11 s6 c17">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v1 ps12 s13 c1">
+<div class="v1 ps2 s14 w1">
+<div class="v1 ps13 s15 c1">
+<div class="v1 ps14 s7 c18">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+<div class="v1 ps15 s7 c19">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un23 v1 ps16 s9 c20">
+<p class="p1 f3">What other coins are</p>
+</div>
+</div>
+<div class="v1 ps17 s7 c21">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+<div class="v1 ps18 s16 c1">
+<div class="v1 ps2 s17 w1">
+<div class="v1 ps4 s18 c1">
+<div class="v1 ps2 s4 w1">
+<div class="v1 ps2 s5 c22">
+<picture class="consentPlaceholder i2 un54">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un24 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c23">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v1 ps19 s7 c24">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v1 ps20 s19 w1">
+<div class="v1 ps2 s6 c25">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v1 ps21 s7 c26">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un25 v1 ps22 s9 c27">
+<p class="p1 f3">What smart contracts are</p>
+</div>
+</div>
+<div class="v1 ps23 s5 c28">
+<picture class="consentPlaceholder i2 un55">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un26 i1">
+</picture>
+</div>
+<div class="v1 ps24 s8 w1">
+<div class="v1 ps2 s5 c29">
+<picture class="consentPlaceholder i2 un56">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un27 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c30">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps25 s7 c31">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps26 s20 c1">
+<div class="v1 ps2 s11 w1">
+<div class="v1 ps2 s5 c32">
+<picture class="consentPlaceholder i2 un57">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un28 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c33">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v1 ps5 s11 w1">
+<div class="v1 ps2 s5 c34">
+<picture class="consentPlaceholder i2 un58">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un29 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c35">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v1 ps24 s11 w1">
+<div class="v1 ps2 s5 c36">
+<picture class="consentPlaceholder i2 un59">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un30 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c37">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+</div>
+</div>
+<div class="v1 ps27 s21 c1">
+<div class="v1 ps14 s7 c21">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+<div class="v1 ps15 s7 c21">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+<div class="v1 ps28 s7 c21">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+<div class="anim fadeInDown un31 v1 ps29 s9 c38">
+<p class="p1 f3">What DAOs are</p>
+</div>
+<div class="v1 ps30 s22 c1">
+<div class="v1 ps2 s4 w1">
+<div class="v1 ps2 s5 c39">
+<picture class="consentPlaceholder i2 un60">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un32 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c40">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v1 ps5 s8 w1">
+<div class="v1 ps2 s5 c41">
+<picture class="consentPlaceholder i2 un61">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un33 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c42">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v1 ps6 s7 c43">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+<div class="v1 ps24 s8 w1">
+<div class="v1 ps2 s5 c44">
+<picture class="consentPlaceholder i2 un62">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un34 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c45">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps6 s7 c46">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un35 v1 ps31 s9 c38">
+<p class="p1 f3">What NFTs are</p>
+</div>
+<div class="v1 ps32 s23 c1">
+<div class="v1 ps2 s24 w1">
+<div class="v1 ps2 s5 c47">
+<picture class="consentPlaceholder i2 un63">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un36 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c48">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v1 ps33 s7 c21">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v1 ps5 s4 w1">
+<div class="v1 ps2 s5 c49">
+<picture class="consentPlaceholder i2 un64">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un37 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c50">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+<div class="v1 ps24 s4 w1">
+<div class="v1 ps2 s5 c51">
+<picture class="consentPlaceholder i2 un65">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un38 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c52">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="anim fadeInDown un39 v1 ps34 s9 c38">
+<p class="p1 f3">Ways you can make money</p>
+</div>
+<div class="v1 ps35 s23 c1">
+<div class="v1 ps2 s24 w1">
+<div class="v1 ps2 s5 c53">
+<picture class="consentPlaceholder i2 un66">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un40 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c54">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+<div class="v1 ps33 s7 c21">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+</div>
+<div class="v1 ps5 s4 w1">
+<div class="v1 ps2 s5 c55">
+<picture class="consentPlaceholder i2 un67">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un41 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c56">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+<div class="v1 ps24 s4 w1">
+<div class="v1 ps2 s5 c57">
+<picture class="consentPlaceholder i2 un68">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un42 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c58">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps36 s25 c1">
+<div class="v1 ps2 s26 w1">
+<div class="anim fadeInDown un43 v1 ps2 s9 c59">
+<p class="p1 f3">Ways you can loose money</p>
+</div>
+<div class="v1 ps37 s27 c1">
+<div class="v1 ps2 s11 w1">
+<div class="v1 ps2 s5 c60">
+<picture class="consentPlaceholder i2 un69">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un44 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c61">
+<p class="p1 f1">Short and simple video with simple English&nbsp;&nbsp;&mdash; explaining the input and output and how it can be used</p>
+</div>
+</div>
+<div class="v1 ps20 s6 c62">
+<p class="p1 f1">Middle length video with adult English clarifying component pieces and known implementations</p>
+</div>
+</div>
+<div class="v1 ps38 s15 c1">
+<div class="v1 ps14 s7 c21">
+<p class="p2 f2">Video Length: 2:00</p>
+</div>
+<div class="v1 ps15 s7 c21">
+<p class="p2 f2">Video Length: 5:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps39 s5 c63">
+<picture class="consentPlaceholder i2 un70">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un45 i1">
+</picture>
+</div>
+<div class="v1 ps40 s4 w1">
+<div class="v1 ps2 s5 c64">
+<picture class="consentPlaceholder i2 un71">
+<source data-srcset="images/video-240.webp 1x, images/video-480.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/video-240.png 1x, images/video-480.png 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/video-480.png" class="un46 i1">
+</picture>
+</div>
+<div class="v1 ps3 s6 c65">
+<p class="p1 f1">Long video explaining things from an engineering perspective</p>
+</div>
+<div class="v1 ps4 s7 c21">
+<p class="p2 f2">Video Length: 25:00</p>
+</div>
+</div>
+</div>
+<div class="v1 ps41 s28 c1">
+<div class="v1 ps14 s29 c66">
+<p class="p1 f2">Want to stay up to date on what&rsquo;s new in crypto solutions?</p>
+</div>
+<div class="v1 ps42 s30 c67">
+<input type="text" value="(Enter your email here?" name="text" class="input1">
+</div>
+</div>
+<div class="v1 ps43 s31 c68">
+<p class="p1 f2">We&rsquo;ll send you a 2min an email once a week with bullet points and links you can click on to keep you up to date</p>
+</div>
+<div class="v1 ps44 s32 c69">
+<p class="p2 f2">Want to get breaking news on coins, contracts, and opportunities?<br>Join us for $100 a month, everything else we offer is free.</p>
+</div>
+<div class="v1 ps45 s33 c70">
+<picture class="i4 un72">
+<source data-srcset="images/pasted-image-183.webp 1x, images/pasted-image-366.webp 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x" type="image/webp">
+<source data-srcset="images/pasted-image-183.jpg 1x, images/pasted-image-366.jpg 2x" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7 1x">
+<img src="images/pasted-image-366.jpg" class="un47 i3">
+</picture>
+</div>
+<div class="v1 ps46 s32 c69">
+<p class="p2 f2">Pay pal will collect your email for us.</p>
+</div>
+</div>
+<div class="btf c71">
+</div>
+<script>var p=document.createElement("P");p.innerHTML="&nbsp;",p.style.cssText="position:fixed;visible:hidden;font-size:100px;zoom:1",document.body.appendChild(p);var rsz=function(e){return function(){var r=parseInt(1e7/parseFloat(window.getComputedStyle(e).getPropertyValue("font-size"))+.5)/1e5,n=document.body;r!=n.style.getPropertyValue("--f")&&n.style.setProperty("--f",r)}}(p);if("ResizeObserver"in window){var ro=new ResizeObserver(rsz);ro.observe(p)}else if("requestAnimationFrame"in window){var raf=function(){rsz(),window.requestAnimationFrame(raf)};window.requestAnimationFrame(raf)}else setInterval(rsz,100);</script>
+
+<script>dpth="/";!function(){for(var e=["js/woolite.2a4ecf.js","js/jquery.2a4ecf.js","js/index.700e60.js"],n={},s=-1,t=function(t){var o=new XMLHttpRequest;o.open("GET",e[t],!0),o.onload=function(){for(n[t]=o.responseText;s<3&&void 0!==n[s+1];){s++;var e=document.createElement("script");e.textContent=n[s],document.body.appendChild(e)}},o.send()},o=0;o<3;o++)t(o)}();
+</script>
+</body>
+</html>
